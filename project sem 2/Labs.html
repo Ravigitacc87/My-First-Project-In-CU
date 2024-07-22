@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+  table {
+    border: 2px solid rgb(10, 10, 10);
+  }
+
+  th {
+    background-image: url();
+    background-repeat: no-repeat;
+  }
+
+  body {
+    margin: 0px;
+    background-image: url("l2.jpg");
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+  }
+
+  .icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+
+  .icon-bar a {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 19px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+
+  .icon-bar a:hover {
+    background-color: #000;
+
+  }
+
+  .active {
+    background-color: rgb(59, 58, 58);
+  }
+
+  span {
+    font-family: cursive;
+    color: rgb(40, 8, 251);
+  }
+
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(18, 1, 255);
+    text-shadow: 10px 10px 15px black;
+    font-size: 56px;
+  }
+
+  td {
+    border: 2px solid black;
+    background-color: grey;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  h2 {
+
+    color: rgb(138, 192, 228);
+    font-size: 50px;
+    text-shadow: 10px 10px 15px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+  .container {
+    position: relative;
+    max-width: max-content;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .container img {
+    vertical-align: middle;
+  }
+
+  .container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
+
+  }
+
+  .button {
+
+    text-align: center;
+    font-size: 28px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  footer {
+    overflow: hidden;
+    background-color: #555;
+  }
+
+  footer a:hover {
+    background-color: #555;
+    text-decoration: none;
+    padding: 10px;
+    color: ghostwhite;
+  }
+
+  .align {
+    text-align: center;
+    align-content: center;
+  }
+
+  .ii {
+    height: 180px;
+    width: 180px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+  }
+
+  /* Grid item styles */
+  .item {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #d4eb9f;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+  }
+
+  .landing {
+    border-radius: 105px;
+    padding: 20px;
+    width: 100%;
+    height: 20%;
+  }
+
+  .conten {
+    display: none;
+
+  }
+
+  #read-more-btn {
+    display: block;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 20px 2px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 35px;
+    color: #8464e4;
+
+  }
+
+  p {
+    font-family: 'cursive';
+    color: rgb(249, 246, 246);
+  }
+
+  ul.a {
+    font-family: 'cursive';
+    color: rgb(249, 246, 246);
+    list-style-type: circle;
+  }
+
+  .j {
+
+    border: 125px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<title>Labs</title>
+</head>
+
+<body>
+
+  <table id="header" width="100%" size="50%">
+    <tr>
+      <th><img class="ii" src="D:\Files\CU FILE\Study\project sem 2\006.png"><br>
+        <h1>The Umbrella Academy</h1>
+      </th>
+    </tr>
+  </table>
+  <table width="100%">
+    <tr class="icon-bar">
+      <td class="button"><a title="Home" href="D:\Files\CU FILE\Study\project sem 2\Home.html" tabindex="2"><i
+            class="fa fa-home-lg"><span>Home</span></i></a></td>
+      <td class="button"><a title="Student" href="D:\Files\CU FILE\Study\project sem 2\Student.html" tabindex="2"><i
+            class="fa fa-child"><span>Student</span></i></a></td>
+      <td class="button"><a title="Course" href="D:\Files\CU FILE\Study\project sem 2\Course.html" tabindex="2"><i
+            class="fa fa-book-atlas"><span>Courses</span></i></a></td>
+      <td class="button"><a class="active" title="Labs" href="D:\Files\CU FILE\Study\project sem 2\Labs.html"
+          tabindex="2"><i class="fa fa-flask-vial"><span>Labs</span></i></a></td>
+      <td class="button"><a title="Achivements" href="D:\Files\CU FILE\Study\project sem 2\Achivements.html"
+          tabindex="2"><i class="fa fa-graduation-cap"><span>Achivements</span></i></a></td>
+    </tr>
+  </table>
+  <div><img class="landing" src="D:\Files\CU FILE\Study\project sem 2\/Landing Page.jpg"></div>
+  <h2>About Virtual Labs</h2>
+  <p class="j">The Virtual Labs is based on the idea that lab experiments can be taught using the Internet, more
+    efficiently and less expensively. The labs can also be made available to students with no access to physical labs or
+    where equipment is not available owing to being scarce or costly. This helps them compete with students in better
+    equipped schools and bridges the digital divide and geographical distances. The experiments can be accessed anytime
+    and anywhere, overcoming the constraints on time felt when having access to the physical lab for only a short period
+    of time.</p>
+  <div class="conten">
+    <p>The virtual labs are based on the idea that lab experiments can be taught using the internet more efficiently in
+      a cost-effective manner. The Virtual Labs will also benefit the students who do not have access to physical labs
+      or schools where equipments are not available owing to being scarce or costly. The Virtual Labs can be accessed
+      anytime and anywhere, overcoming the constraints of time as physical labs are available only during school hours.
+    </p>
+    <ul class="a">The features of virtual labs disseminated include:<br>
+      <li>Simulations in Science, Mathematics and skill e-labs.</li>
+      <li> Animations, lab videos and text documents.</li>
+      <li>Perform and learn experiments - anywhere, anytime</li>
+      <li>Individualised practice in all areas of experimentation.</li>
+      <li> Content aligned to NCERT/CBSE and State Board syllabus.</li>
+      <li>Physics, Chemistry, Biology Labs from Class 9 to Class 12. English and Maths lessons for Class 9 and 10.</li>
+      <li>Interactive simulations, animations and lab videos.</li>
+      <li>The concepts and understanding of the experiment.</li>
+      <li>The ability to perform, record and learn experiments - anywhere, anytime, and individualised practice in all
+        areas of experimentation.</li>
+    </ul>
+  </div>
+  <button id="read-more-btn">Read More</button>
+
+
+  <div class="container">
+    <div class="item"><a href="https://www.olabs.edu.in/?pg=topMenu&id=40"><img
+          src="D:\Files\CU FILE\Study\project sem 2\/physics1.png"></a>
+      <p><a href="https://www.olabs.edu.in/?pg=topMenu&id=40" style="color:white"><span>PHYSICS</span></a></p>
+    </div>
+
+    <div class="item"><a href="https://www.olabs.edu.in/?pg=topMenu&id=41"><img
+          src="D:\Files\CU FILE\Study\project sem 2\/chemistry1.png"></a>
+      <p><a href="https://www.olabs.edu.in/?pg=topMenu&id=41" style="color:white"><span>CHEMISTRY</span></a></p>
+    </div>
+
+    <div class="item"><a href="https://www.olabs.edu.in/?pg=topMenu&id=53"><img
+          src=" D:\Files\CU FILE\Study\project sem 2\/biology1.png"></a>
+      <p><a href="https://www.olabs.edu.in/?pg=topMenu&id=53" style="color:white"><span>BIOLOGY</span></a></p>
+    </div>
+
+
+    <div class="item"><a href="https://www.olabs.edu.in/?pg=topMenu&id=58"><img
+          src=" D:\Files\CU FILE\Study\project sem 2\/maths1.png"></a>
+      <p><a href="https://www.olabs.edu.in/?pg=topMenu&id=58" style="color:white"><span>MATHEMATICS</span></a></p>
+
+    </div>
+
+    <div class="item"><a href="https://www.olabs.edu.in/?pg=topMenu&id=295"><img
+          src=" D:\Files\CU FILE\Study\project sem 2\/Language-Icon2.png"></a>
+      <p><a href="https://www.olabs.edu.in/?pg=topMenu&id=295" style="color:white"><span>LANGUAGE</span></a></p>
+    </div>
+
+    <div class="item"><a href="https://www.olabs.edu.in/?pg=topMenu&id=291"><img
+          src="D:\Files\CU FILE\Study\project sem 2\/Science_img.png"></a>
+      <p><a href="https://www.olabs.edu.in/?pg=topMenu&id=291" style="color:white"><span>SCIENCE</span></a></p>
+    </div>
+
+    <div class="item"><a href="https://www.olabs.edu.in/?pg=topMenu&id=292"><img
+          src="D:\Files\CU FILE\Study\project sem 2\/Compter_Science_img.png"></a>
+      <p><a href="https://www.olabs.edu.in/?pg=topMenu&id=292" style="color:white"><span>COMPUTER</span></a></p>
+    </div>
+
+    <div class="item"><a href="https://www.olabs.edu.in/?pg=topMenu&id=293"><img
+          src=" D:\Files\CU FILE\Study\project sem 2\/AR_VR_img.png"></a>
+      <p><a href="https://www.olabs.edu.in/?pg=topMenu&id=293" style="color:white"><span>AR/VR</span></a></p>
+    </div>
+
+    <div class="item"><a href="https://www.olabs.edu.in/?pg=topMenu&id=294"><img
+          src=" D:\Files\CU FILE\Study\project sem 2\/Social-Science-Icon1.png"></a>
+      <p><a href="https://www.olabs.edu.in/?pg=topMenu&id=294" style="color:white"><span>SOCIAL SCIENCE</span></a></p>
+
+    </div>
+    <div class="item"><a href="#"><img src=" D:\Files\CU FILE\Study\project sem 2/\8.png"></a>
+      <p><a href="#" style="color:white"></a></p>
+    </div>
+  </div>
+  <br><br>
+  <div>
+    <footer>
+      <a href="#">FAQ</a>
+      <a href="#">Contacts</a>
+      <a href="#">Term Of Use</a>
+      <a href="#">Privacy Policy</a>
+    </footer>
+  </div>
+  <script>
+    var readMoreBtn = document.getElementById("read-more-btn");
+    var content = document.querySelector(".conten");
+
+    readMoreBtn.addEventListener("click", function () {
+      if (content.style.display === "none") {
+        content.style.display = "block";
+        readMoreBtn.innerHTML = "Read Less";
+      } else {
+        content.style.display = "none";
+        readMoreBtn.innerHTML = "Read More";
+      }
+    });
+
+  </script>
+</body>
+
+</html>

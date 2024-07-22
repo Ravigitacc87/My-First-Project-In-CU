@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <style>
+    table {
+      border: 2px solid rgb(10, 10, 10);
+    }
+
+    th {
+      background-repeat: no-repeat;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+      margin: 0px;
+    }
+
+    .icon-bar {
+      width: 100%;
+      background-color: #555;
+      overflow: auto;
+    }
+
+    .icon-bar a {
+      float: left;
+      width: 100%;
+      text-align: center;
+      padding: 19px 0;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 36px;
+    }
+
+    .icon-bar a:hover {
+      background-color: #000;
+
+    }
+
+    .active {
+      background-color: rgb(59, 58, 58);
+    }
+
+    h1 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      text-align: center;
+      color: rgb(18, 1, 255);
+      text-shadow: 5px 5px 10px black;
+      font-size: 56px;
+
+    }
+
+    td {
+      border: 2px solid black;
+      background-color: grey;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    a {
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    h2 {
+
+      color: brown;
+      font-size: 70px;
+      width: 70px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      display: grid;
+      height: 100%;
+      width: 100%;
+      font-size: 17px;
+      background-image: url("bg.jpg");
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      position: relative;
+      max-width: max-content;
+      height: fit-content;
+      margin: 0 auto;
+    }
+
+    .container img {
+      vertical-align: middle;
+    }
+
+    .container .content {
+      position: absolute;
+      bottom: 0;
+      background: rgb(0, 0, 0);
+      /* Fallback color */
+      background: rgba(0, 0, 0, 0.5);
+      /* Black background with 0.5 opacity */
+      color: #f1f1f1;
+      width: 100%;
+      padding: 10px;
+
+    }
+
+    .button {
+
+      text-align: center;
+      font-size: 28px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+    .button span {
+      cursor: pointer;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    .button:hover span {
+      padding-right: 25px;
+    }
+
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+
+    footer {
+      overflow: hidden;
+      background-color: #555;
+    }
+
+    footer a:hover {
+      background-color: #555;
+      text-decoration: none;
+      padding: 10px;
+      color: ghostwhite;
+    }
+
+    .align {
+      text-align: center;
+      align-content: center;
+    }
+
+    .ii {
+      height: 175px;
+      width: 175px;
+    }
+
+    span {
+      font-family: cursive;
+
+      color: rgb(40, 8, 251);
+    }
+
+    .c {
+      border-radius: 700px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    .d {
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+
+    .e {
+      font-size: larger;
+      font-family: cursive;
+      color: rgb(2, 50, 6);
+    }
+
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+
+    @media screen and (max-height: 350px) {
+      .sidenav {
+        padding-top: 35px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+  </style>
+  <title>Home</title>
+</head>
+
+<body>
+
+  <table id="header" width="100%" size="50%">
+    <tr>
+      <th><img class="ii" src="D:\Files\CU FILE\Study\project sem 2\006.png"><br>
+        <h1>The Umbrella Academy</h1>
+      </th>
+    </tr>
+  </table>
+  <table width="100%">
+    <tr class="icon-bar">
+      <td class="button"><a class="active" title="Home" href="D:\Files\CU FILE\Study\project sem 2\Home.html"
+          tabindex="2"><i class="fa fa-home-lg"><span>Home</span></i></a></td>
+      <td class="button"><a title="Student" href="D:\Files\CU FILE\Study\project sem 2\Student.html" tabindex="2"><i
+            class="fa fa-child"><span>Student</span></i></a></td>
+      <td class="button"><a title="Course" href="D:\Files\CU FILE\Study\project sem 2\Course.html" tabindex="2"><i
+            class="fa fa-book-atlas"><span>Courses</span></i></a></td>
+      <td class="button"><a title="Labs" href="D:\Files\CU FILE\Study\project sem 2\Labs.html" tabindex="2"><i
+            class="fa fa-flask-vial"><span>Labs</span></i></a></td>
+      <td class="button"><a title="Achivements" href="D:\Files\CU FILE\Study\project sem 2\Achivements.html"
+          tabindex="2"><i class="fa fa-graduation-cap"><span>Achivements</span></i></a></td>
+    </tr>
+  </table>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="D:\Files\CU FILE\Study\project sem 2\Home.html">About</a>
+    <a href="D:\Files\CU FILE\Study\project sem 2\Home.html">Services</a>
+    <a href="D:\Files\CU FILE\Study\project sem 2\Home.html">Clients</a>
+    <a href="D:\Files\CU FILE\Study\project sem 2\Home.html">Contact</a>
+  </div>
+
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img style="height: 45px; width: 45px;"
+      src="D:\Files\CU FILE\Study\project sem 2\006.png">&#9776;</span>
+
+  <br>
+  <div class="c">
+    <section>
+      <img class="mySlides" src="D:\Files\CU FILE\Study\project sem 2\h7.jpg" style="height: 500px  ;width:750px ">
+      <img class="mySlides" src="D:\Files\CU FILE\Study\project sem 2\h8.png" style="height:500px  ;width:750px">
+      <img class="mySlides" src="D:\Files\CU FILE\Study\project sem 2\h15.jpg" style="height:500px  ;width:750px">
+
+      <img class="mySlides" src="D:\Files\CU FILE\Study\project sem 2\h10.jpg" style="height:500px  ;width:750px">
+
+      <img class="mySlides" src="D:\Files\CU FILE\Study\project sem 2\h11.jpg" style="height:500px ;width:750px">
+    </section>
+  </div>
+  <section class="w3-container w3-center w3-content" style="max-width:1100px">
+    <h2 class="d">The Umbrella Academy</h2>
+    <p class="e">The education sector has undergone significant changes in recent years,
+      with the advent of technology driving many of these changes.
+      One of the most significant changes has been the rise of virtual studies, where students can study and learn from
+      the comfort of their own homes.<br>
+
+      Virtual studies are a form of online learning where students attend classes remotely.
+      This form of learning has become increasingly popular due to its flexibility, affordability, and convenience.
+      Students can attend classes from anywhere in the world, and they can study at their own pace.<br>
+
+      The COVID-19 pandemic has also accelerated the growth of virtual studies.
+      With the closure of schools and universities, virtual studies have become the only option for students to continue
+      their education.
+      Many educational institutions have shifted their focus to virtual studies, ensuring that students can continue
+      their studies without any disruption.<br>
+
+      The benefits of virtual studies are numerous. One of the main advantages is flexibility.
+      Students can attend classes at a time that suits them, and they can study from anywhere in the world.
+      This flexibility is particularly useful for students who have work or family commitments and cannot attend
+      traditional classes.<br>
+
+      Virtual studies are also more affordable than traditional classes.
+      Students do not have to pay for travel or accommodation, and the cost of tuition is often lower than traditional
+      classes.
+      This makes virtual studies an attractive option for students who are on a budget.<br>
+
+      Another advantage of virtual studies is that they are more convenient.
+      Students do not have to worry about commuting to classes, and they can study from the comfort of their own homes.
+      This convenience is particularly important for students who have disabilities or health conditions that make
+      attending traditional classes difficult.<br>
+
+      Virtual studies also offer a range of resources that traditional classes do not.
+      Students can access online libraries, discussion forums, and other resources that can help them with their
+      studies.
+      This means that students can learn at their own pace, and they can access resources that suit their learning
+      style.
+
+      However, virtual studies also have their challenges.
+      One of the main challenges is the lack of interaction between students and teachers.
+      Virtual studies rely heavily on technology, which can sometimes be unreliable.
+      This can lead to frustration and difficulties for students who are trying to learn.<br>
+
+      Another challenge is the lack of structure in virtual studies.
+      Students who are used to traditional classes may find it difficult to adjust to the self-directed nature of
+      virtual studies.
+      This requires a lot of self-discipline and motivation, which not all students possess.
+
+      Despite these challenges, virtual studies are the future of education.
+      They offer a flexible, affordable, and convenient way for students to learn.
+      As technology continues to evolve, virtual studies will become even more sophisticated, and they will offer even
+      more benefits to students.<br>
+
+      In conclusion, virtual studies are a valuable tool for students who want to learn in a flexible and convenient
+      way.
+      They offer a range of benefits, including affordability, convenience, and access to resources. While virtual
+      studies have their challenges,
+      they are the future of education, and they will continue to evolve and improve over time.</p>
+  </section>
+
+  <section class="w3-row-padding w3-center w3-light-grey">
+    <article class="w3-third">
+      <a href="D:\Files\CU FILE\Study\project sem 2\Labs.html">
+        <img src="D:\Files\CU FILE\Study\project sem 2\h7.jpg" alt="Virtual Labs" style="width:100%">
+        <p>Virtual Labs</p>
+      </a>
+    </article>
+    <article class="w3-third">
+      <a href="D:\Files\CU FILE\Study\project sem 2\Student.html">
+        <img src="D:\Files\CU FILE\Study\project sem 2\h8.png" alt="Students" style="width:100%">
+        <p>Student Section</p>
+      </a>
+    </article>
+    <article class="w3-third">
+      <a href="D:\Files\CU FILE\Study\project sem 2\Course.html">
+        <img src="D:\Files\CU FILE\Study\project sem 2\h15.jpg" alt="Course" style="width:100%">
+        <p>Online Courses</p>
+      </a>
+    </article>
+  </section><br><br><br><br>
+
+  <div>
+    <footer>
+      <a href="#">FAQ</a>
+      <a href="#">Contacts</a>
+      <a href="#">Term Of Use</a>
+      <a href="#">Privacy Policy</a>
+
+    </footer>
+  </div>
+
+  <script>
+
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 3000);
+    }
+
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+
+  </script>
+</body>
+
+</html>

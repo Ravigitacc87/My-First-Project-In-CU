@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<style>
+  table {
+    border: 2px solid rgb(10, 10, 10);
+  }
+
+  th {
+    background-repeat: no-repeat;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  body {
+    margin: 0px;
+  }
+
+  .icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+
+  .icon-bar a {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 19px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+
+  .icon-bar a:hover {
+    background-color: #000;
+
+  }
+
+  .active {
+    background-color: rgb(59, 58, 58);
+  }
+
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(18, 1, 255);
+    text-shadow: 5px 5px 10px black;
+    font-size: 56px;
+
+  }
+
+  td {
+    border: 2px solid black;
+    background-color: grey;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  h2 {
+
+    color: rgb(138, 192, 228);
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial;
+    font-size: 17px;
+    background-image: url("D:\Files\CU FILE\Study\project sem 2\011.jpg");
+  }
+
+  .container {
+    position: relative;
+    max-width: max-content;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .container img {
+    vertical-align: middle;
+  }
+
+  .container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 10px;
+
+  }
+
+  .button {
+
+    text-align: center;
+    font-size: 28px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .button span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .button:hover span {
+    padding-right: 25px;
+  }
+
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  footer {
+    overflow: hidden;
+    background-color: #555;
+  }
+
+  footer a:hover {
+    background-color: #555;
+    text-decoration: none;
+    padding: 10px;
+    color: ghostwhite;
+  }
+
+  .align {
+    text-align: center;
+    align-content: center;
+  }
+
+  .ii {
+    height: 180px;
+    width: 180px;
+    padding: 0px 0px 0px 0px;
+  }
+
+  span {
+    font-family: cursive;
+
+    color: rgb(40, 8, 251);
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-image: url("bg2.jpg");
+    border-radius: 15px;
+  }
+
+  /* Grid item styles */
+  .item {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url("3.jpg");
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .landing {
+    border-radius: 105px;
+    padding: 20px;
+    width: 100%;
+    height: 20%;
+  }
+
+  .conten {
+    display: none;
+
+  }
+
+  .j {
+    border: 125px;
+    font-family: cursive;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<title>Course</title>
+</head>
+
+<body>
+
+  <table id="header" width="100%" size="50%">
+    <tr>
+      <th><img class="ii" src="D:\Files\CU FILE\Study\project sem 2\006.png"><br>
+        <h1>The Umbrella Academy</h1>
+      </th>
+    </tr>
+  </table>
+  <table width="100%">
+    <tr class="icon-bar">
+      <td class="button"><a title="Home" href="D:\Files\CU FILE\Study\project sem 2\Home.html" tabindex="2"><i
+            class="fa fa-home-lg"><span>Home</span></i></a></td>
+      <td class="button"><a title="Student" href="D:\Files\CU FILE\Study\project sem 2\Student.html" tabindex="2"><i
+            class="fa fa-child"><span>Student</span></i></a></td>
+      <td class="button"><a class="active" title="Course" href="D:\Files\CU FILE\Study\project sem 2\Course.html"
+          tabindex="2"><i class="fa fa-book-atlas"><span>Courses</span></i></a></td>
+      <td class="button"><a title="Labs" href="D:\Files\CU FILE\Study\project sem 2\Labs.html" tabindex="2"><i
+            class="fa fa-flask-vial"><span>Labs</span></i></a></td>
+      <td class="button"><a title="Achivements" href="D:\Files\CU FILE\Study\project sem 2\Achivements.html"
+          tabindex="2"><i class="fa fa-graduation-cap"><span>Achivements</span></i></a></td>
+    </tr>
+  </table>
+  <div><img class="landing" src="D:\Files\CU FILE\Study\project sem 2\0018.jpg"></div>
+
+  <h2>About E-learning</h2>
+  <p class="j">E-learning, also known as online learning or distance education, refers to the use of electronic
+    technology to deliver educational content to students who are not physically present in a traditional classroom
+    setting.<br> E-learning has become increasingly popular in recent years due to its flexibility and convenience,
+    allowing students to access education at any time and from any location.<br>
+
+    There are various types of e-learning, ranging from self-paced online courses to virtual classrooms that offer
+    real-time interaction with instructors and fellow students. Some e-learning platforms provide multimedia content
+    such as videos, simulations, and interactive games, while others rely on text-based materials and discussion
+    forums.<br>
+
+    One of the main advantages of e-learning is its accessibility. With e-learning, students who live far from a
+    physical institution or who have busy schedules can still pursue their education. E-learning also provides a more
+    personalized learning experience, as students can work at their own pace and access materials that suit their
+    individual needs and learning styles.<br>
+
+    Moreover, e-learning can be more cost-effective than traditional classroom learning. With e-learning, there are no
+    expenses for textbooks, transportation, or accommodation, and students can save time that would otherwise be spent
+    commuting to a physical location.<br>
+
+    However, e-learning also presents some challenges. Some students may struggle with the lack of face-to-face
+    interaction with instructors and classmates, which can result in feelings of isolation and disengagement.
+    Additionally, e-learning requires a certain level of self-discipline and motivation, as students must manage their
+    own learning and keep up with coursework without the structure of a traditional classroom.<br>
+
+    Overall, e-learning offers a convenient and flexible alternative to traditional classroom learning, but it may not
+    be suitable for every student or every subject. As technology continues to advance, it is likely that e-learning
+    will become an increasingly important component of education in the years to come.</p>
+
+  <br>
+  <div class="container">
+    <div class="item"><a href="https://www.khanacademy.org/"><img
+          src="D:\Files\CU FILE\Study\project sem 2\khan academy.png"></a>
+      <p><a href="https://www.khanacademy.org/" style="color:white"><br><span>KHAN ACADEMY</span></a></p>
+    </div>
+
+    <div class="item"><a href="https://unacademy.com/"><img
+          src="D:\Files\CU FILE\Study\project sem 2\unacademy1.png"></a>
+      <p><a href="https://unacademy.com/" style="color:white"><span>UNACADEMY</span></a></p>
+    </div>
+
+    <div class="item"><a href="https://byjus.com/"><img src=" D:\Files\CU FILE\Study\project sem 2\Byus.png"></a>
+      <p><a href="https://byjus.com/" style="color:white"><br><span>BYU'S</span></a></p>
+    </div>
+
+
+    <div class="item"><a href="https://www.udemy.com/"><img src=" D:\Files\CU FILE\Study\project sem 2\udemy.png"></a>
+      <p><a href="https://www.udemy.com/" style="color:white"><br><span>UDEMY</span></a></p>
+
+    </div>
+
+    <div class="item"><a href="https://www.vedantu.com/"><img
+          src=" D:\Files\CU FILE\Study\project sem 2\vedantu1.png"></a>
+      <p><a href="https://www.vedantu.com/" style="color:white"><span>VEDANTU</span></a></p>
+    </div>
+
+    <div class="item"><a href="#"><img src=" D:\Files\CU FILE\Study\project sem 2\9.png"></a>
+      <p><a href="#" style="color:white"></a></p>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <div>
+    <footer>
+      <a href="#">FAQ</a>
+      <a href="#">Contacts</a>
+      <a href="#">Term Of Use</a>
+      <a href="#">Privacy Policy</a>
+
+    </footer>
+  </div>
+</body>
+
+</html>
